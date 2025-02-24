@@ -10,12 +10,39 @@
 <body>
     <header>My Library</header>
     <main>
-        <div class="new-book"></div>
+        <dialog>
+            <form action="">
+                <p>Enter your book data</p>
+                <div class="form-body">
+                    <label for="book-title">
+                        <span>Title:</span>
+                        <input type="text" id="book-title" name="book-title">
+                    </label>
+                    <label for="book-author">
+                        <span>Author:</span>
+                        <input type="text" id="book-author" name="book-author">
+                    </label>
+                    <label for="book-pages">
+                        <span>Number of pages:</span>
+                        <input type="number" id="book-pages" name="book-pages">
+                    </label>
+                    <label for="book-read">
+                        <span>Have you read it?</span>
+                        <input type="checkbox" id="book-read" name="book-read" value="true">
+                    </label>
+                </div>
+                <div class="form-submit">
+                    <button formmethod="dialog">Cancel</button>
+                    <button id="confirm">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+        <button id="add-book">Add a book</button>
         <table>
             <thead></thead>
             <tbody></tbody>
         </table>
     </main>
-    <footer></footer>
+    <footer>Copyright &copy; gofhilman 2025</footer>
 </body>
 </html>

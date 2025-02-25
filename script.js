@@ -12,7 +12,7 @@ function addBookToLibrary(book) {
 function createTableHeader() {
     if (myLibrary.length == 1) {
         const headerRow = document.createElement("tr");
-        const columnHeaders = ["Title", "Author", "Number of Pages", "Read", "Action"];
+        const columnHeaders = ["Title", "Author", "Pages", "Read", "Action"];
         columnHeaders.forEach(columnHeader => {
             const header = document.createElement("th");
             header.textContent = columnHeader;

@@ -33,6 +33,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
         'Helvetica Neue', sans-serif;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -44,7 +45,7 @@ body {
 
 header {
     background-color: var(--bg-alt-color);
-    width: 100vw;
+    width: 100%;
     display: flex;
     gap: 15px;
     padding: 10px max(2rem, 50vw - 200px / 2);
@@ -238,7 +239,7 @@ td > button:hover {
 
 footer {
     background-color: var(--bg-alt-color);
-    width: 100vw;
+    width: 100%;
     padding: 3px max(2rem, 50vw - 200px / 2);
     font-size: 0.9rem;
 }

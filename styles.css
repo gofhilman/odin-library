@@ -44,7 +44,7 @@ body {
 
 header {
     background-color: var(--bg-alt-color);
-    width: 100%;
+    width: 100vw;
     display: flex;
     gap: 15px;
     padding: 10px max(2rem, 50vw - 200px / 2);
@@ -238,7 +238,7 @@ td > button:hover {
 
 footer {
     background-color: var(--bg-alt-color);
-    width: 100%;
+    width: 100vw;
     padding: 3px max(2rem, 50vw - 200px / 2);
     font-size: 0.9rem;
 }

@@ -50,7 +50,11 @@ function displayBooks() {
     cell.appendChild(removeButton);
     bodyRow.appendChild(cell);
     tableBody.appendChild(bodyRow);
-    removeButton.addEventListener('click',() => tableBody.removeChild(bodyRow));
+    removeButton.addEventListener('click',() => {
+        myLibrary.splice(myLibrary.indexOf(book), 1);
+        tableBody.removeChild(bodyRow);
+        if (myLibrary.length == 0) tableHeader.replaceChildren();
+    });
 }
 
 function resetValues() {

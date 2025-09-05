@@ -203,9 +203,7 @@ td:nth-child(3) {
 }
 
 td:nth-child(4) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 td:nth-child(5) {
